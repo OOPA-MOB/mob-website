@@ -6,3 +6,9 @@ body {
 .buffer {
     height: 100px;
 }
+
+.icons {
+    margin-left: 10px;
+    margin-right: 10px;
+    animation-duration: 20s;
+}

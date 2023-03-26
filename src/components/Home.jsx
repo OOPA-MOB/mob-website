@@ -4,8 +4,9 @@ import { useTheme } from '@mui/material/styles';
 import { Link } from "react-router-dom";
 import Carousel from 'react-material-ui-carousel'
 import Image from "mui-image";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDiscord } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export default function Home() {
     const theme = useTheme();
@@ -30,11 +31,14 @@ export default function Home() {
                     Originally formed around the 'Mafioso' trait, the DAO has since expanded to allow additional members.
                 </Typography>
                 <Typography variant="h5" sx={{overflowWrap: 'break-word', textAlign: 'center', mb: 3}}>
-                    To find out more, join our Discord:
+                    Find out more on Discord or Twitter:
                 </Typography>
                 <Box display="flex" justifyContent="center" sx={{mb: 3}}>
                     <Link to={{ pathname: "https://discord.oopamob.com" }} target="_blank" rel="_norefferer">
-                        <FontAwesomeIcon icon={faDiscord} color="black" fontSize="32px"/>
+                        <FontAwesomeIcon icon={faDiscord} color="black" fontSize="32px" shake className="icons"/>
+                    </Link>
+                    <Link to={{ pathname: "https://twitter.com/oopa_MOB" }} target="_blank" rel="_norefferer">
+                        <FontAwesomeIcon icon={faTwitter} color="black" fontSize="32px" shake className="icons"/>
                     </Link>
                 </Box>
             </Paper>
